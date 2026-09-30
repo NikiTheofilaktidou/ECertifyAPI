@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Solution Items/" />
+  <Project Path="../ECertifyAPI.Application/ECertifyAPI.Application.csproj" Id="0a64b9cc-7fbb-4061-8f40-590ac4462b79" />
+  <Project Path="../ECertifyAPI.Domain/ECertifyAPI.Domain.csproj" Id="6612a347-7d61-4a11-af25-2964f97f2a23" />
+  <Project Path="../ECertifyAPI.Infrastructure/ECertifyAPI.Infrastructure.csproj" Id="2b0d5e44-201b-49d6-b04d-8ec0cbe4eb4d" />
+  <Project Path="ECertifyAPI.csproj" />
+</Solution>
