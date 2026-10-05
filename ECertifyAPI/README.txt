@@ -11,3 +11,4 @@
 
 Adjust the `Server` value according to your SQL Server instance's name.
 4. Run the application.
+5.To test API endpoints, you can use Swagger UI at `https://localhost:<port>/swagger`

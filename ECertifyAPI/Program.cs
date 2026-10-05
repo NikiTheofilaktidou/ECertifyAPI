@@ -1,5 +1,7 @@
 using ECertifyAPI.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using Scalar.AspNetCore;
+using NSwag.AspNetCore;
 namespace ECertifyAPI
 {
     public class Program
@@ -28,6 +30,10 @@ namespace ECertifyAPI
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();
+                app.UseSwaggerUi(options =>
+                {
+                    options.DocumentPath = "/openapi/v1.json"; // for https://localhost:7251/swagger purposes since after asp.net core 9 they removed it
+                });
             }
 
             app.UseHttpsRedirection();
