@@ -3,13 +3,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ECertifyAPI.Infrastructure;
 
-public partial class EcertifyContext : DbContext
+public partial class ECertifyContext : DbContext
 {
-    public EcertifyContext()
+    public ECertifyContext()
     {
     }
 
-    public EcertifyContext(DbContextOptions<EcertifyContext> options)
+    public ECertifyContext(DbContextOptions<ECertifyContext> options)
         : base(options)
     {
     }
