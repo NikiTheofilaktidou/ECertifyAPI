@@ -1,0 +1,27 @@
+.footer h5 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer p,
+.footer a {
+  font-size: 0.9rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer hr {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .bi {
+  font-size: 1.2rem;
+}
+
+.footer .background {
+  background-color: #343a40;
+  color: #fff;
+  padding: 2rem 0;
+}
