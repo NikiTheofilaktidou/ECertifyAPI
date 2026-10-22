@@ -1,0 +1,59 @@
+
+<div class="container py-5">
+  <div class="page-header mb-4">
+    <h1>Angular Binding Concepts</h1>
+    <p class="text-muted">
+      Explore how Angular connects component data with the user interface.
+    </p>
+  </div>
+
+  <!-- Section 1: Interpolation -->
+  <div class="binding-card mb-4">
+    <div class="section-heading">
+      <span class="section-number">01</span>
+      <div>
+        <h2>Interpolation</h2>
+        <p>Display component data using {{ '{{ }}' }}.</p>
+      </div>
+    </div>
+
+    <div class="example-box">
+        <h2>Interpolation</h2>
+      <p class="data-row">
+        <strong>Full Name:</strong> {{firstName}} {{lastName}}
+      </p>
+
+      <p class="data-row">
+        <strong>Total Items:</strong> {{itemCount}}
+      </p>
+
+      <p class="data-row">
+        <strong>Total Price:</strong> {{price * quantity}}
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 2: Property Binding -->
+  <div class="binding-card mb-4">
+    <h2>Property Binding</h2>
+    <button class="btn btn-primary" [disabled]="isDisabled" >Disabled Button</button>
+    <br><br>
+    <img alt="Sample Image" [src]="imageUrl" class="img" />
+    <br><br>
+  <div class="status-box" [class.green]="isActive">     
+    Status: Active
+  </div>
+    </div>
+
+
+      <!-- Section 3: Event Binding -->
+  <div class="binding-card mb-4">
+    <h2>Event Binding</h2>
+    <button class="btn btn-primary" [disabled]="isDisabled" (click)="handleClick()">Click Me!</button>
+    <p>{{message}}</p>
+  <input type="text" (mouseover)="onMouseOver()" (mouseleave)="onMouseLeave()" (input)="onInput($event)" placeholder="Type something..." />
+  <p>You typed: {{inputMessage}}</p>
+
+  <div class="status-box" >
+    </div>
+</div>
